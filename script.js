@@ -1,5 +1,5 @@
-
-
+const tipPerPersonDisplay = document.getElementById("tip-per-person")
+const totalTipDisplay = document.getElementById("total-tip")
 //Get the total bill
 let bill = document.getElementById("bill")
 let totalBill
@@ -45,13 +45,21 @@ for (let i = 0; i < button.length; i++){
 const calculateBtn = document.getElementById("submit")
 
 function calculate(bill, people, tip){
-    amountPerPerson = parseInt(bill) / parseInt(people)
-    console.log(amountPerPerson);
+    amountPerPerson = parseFloat(bill) / parseFloat(people)
 
-    // Percentage = (Part / Whole) * 100
-    percentage = (parseInt(tip) / parseInt(bill)) * 100
-    console.log(tip);
-    console.log(percentage);
+    // console.log(amountPerPerson);
+
+
+    var tipPerPerson = (parseFloat(tip) / 100) * parseFloat(amountPerPerson)
+    var float = tipPerPerson.toFixed(2);
+    tipPerPersonDisplay.innerText = float
+    console.log(tipPerPerson);
+
+    totalTip = tipPerPerson * parseFloat(numberOfPeople)
+    var fixed = totalTip.toFixed(2);
+    totalTipDisplay.innerText = fixed
+
+    console.log(totalTip);
 
 }
 
