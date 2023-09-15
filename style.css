@@ -1,0 +1,63 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.main{
+    display: flex;
+    height: 60vh;
+    width: 80%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.bill-div, .people{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+#bill, #people-cont{
+    height: 30px;
+    border: 1px;
+    background-color: hsl(189, 41%, 97%);
+
+}
+button{
+    color: aliceblue;
+    font-size: 18px;
+    height: 40px;
+    width: 100px;
+    margin: 10px 20px;
+    border-radius: 5px;
+    border: solid transparent;
+    background-color: hsl(183, 100%, 15%);
+}
+
+#select-tip{
+    height: 30vh;
+    width:  450px;
+}
+
+.results{
+    width: 500px;
+    height: 53vh;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 53vh;
+   
+}
+
+/* #tip-person{
+    
+} */
