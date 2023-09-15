@@ -1,5 +1,11 @@
 const tipPerPersonDisplay = document.getElementById("tip-per-person")
 const totalTipDisplay = document.getElementById("total-tip")
+
+
+const resetBtn = document.getElementById("reset")
+resetBtn.addEventListener('click', ()=>{
+    location.reload()
+})
 //Get the total bill
 let bill = document.getElementById("bill")
 let totalBill
@@ -29,6 +35,7 @@ let button = document.getElementsByClassName("button")
 for (let i = 0; i < button.length; i++){
     button[i].addEventListener('click', ()=>{
         tip = button[i].value
+        button[i].classList.add("button-clicked")
         // console.log(tip);
     })
 }
@@ -45,6 +52,7 @@ for (let i = 0; i < button.length; i++){
 const calculateBtn = document.getElementById("submit")
 
 function calculate(bill, people, tip){
+    
     amountPerPerson = parseFloat(bill) / parseFloat(people)
 
     // console.log(amountPerPerson);
