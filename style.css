@@ -101,10 +101,67 @@ span{
 }
 
 @media (min-width: 321px) and (max-width: 480px) {
+    
+    body{position: relative;
+        height: 120vh;
+    }
+    
     .main{
         display: flex;
         flex-direction: column;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: 120vh;
+        overflow: hidden;
+        padding: 30px 20px;
     }
+
+    button{
+        color: aliceblue;
+        font-size: 18px;
+        height: 40px;
+        width: 100px;
+        margin: 10px 20px;
+        border-radius: 5px;
+        border: solid transparent;
+        background-color: hsl(183, 100%, 15%);
+    }
+
+    #select-tip{
+        height: 40vh;
+        width:  300px;
+    }
+
+    .results{
+        width: 270px;
+        height: 40vh;
+        margin-top: 20px;
+        padding: 30px;
+        color: aliceblue;
+        background-color: hsl(183, 100%, 15%);
+        border-radius: 20px;
+    }
+
+    label{
+        font-size: 26px;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 53vh;
+        margin-bottom: 80px;
+       
+    }
+
+    span{
+        font-size: 25px;
+    }
+
+
+
 }
 
 
